@@ -1,0 +1,451 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font: 2.2rem;
+}
+
+h4 h5 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-head {
+  background: #131c27;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.nav-links {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 10vh;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-links h1 {
+  font-size: 3rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  color: white;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 400;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-size: 1.6rem;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(./images/landing-page.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./images/landing-page.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 4.8rem;
+}
+
+.hero h3 {
+  font-size: 3rem;
+  padding: 2rem;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.hero button {
+  border: none;
+  background: #4c6e97;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
+}
+
+.hero button:hover {
+  background: #27394e;
+}
+
+#location {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(./images/new-york-page.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./images/new-york-page.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-header {
+  width: 90%;
+  margin: auto;
+}
+
+.location-header h2 {
+  padding: 1rem 0rem;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+
+.location-header h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 4rem 0rem;
+}
+
+.location-header .cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 50rem;
+}
+
+.location-header .moving-cloud1 {
+  -webkit-animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+          animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+}
+
+.location-header .moving-cloud2 {
+  top: 20%;
+  z-index: -1;
+  opacity: .5;
+  -webkit-animation: cloudAnimation 3s infinite alternate ease-in-out;
+          animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+.benefits {
+  min-height: 100vh;
+}
+
+.benefits-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+}
+
+.benefits-head h2 {
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+
+.benefits-head h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 70vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-icon {
+  background-color: #343c44;
+}
+
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card h4 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(./images/contact-mountain.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./images/contact-mountain.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+#contact button {
+  border: none;
+  background: #4c6e97;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
+}
+
+#contact button:hover {
+  background: #27394e;
+}
+
+#contact .form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 30%;
+  border-radius: 20px;
+}
+
+#contact .form-wrapper label {
+  margin-right: 1rem;
+}
+
+#contact .form-wrapper input {
+  width: 50%;
+}
+
+#contact .form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#contact .form-head {
+  text-align: center;
+  padding: 2rem;
+}
+
+#contact .name-form,
+#contact .email-form {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#contact .name-form input,
+#contact .email-form input {
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: #343c44;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer h3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 40rem;
+          flex: 3 1 40rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 912px) {
+  html {
+    font-size: 45%;
+  }
+  .nav-links {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+  #location {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(transparent)), url(./images/new-york-page.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), transparent), url(./images/new-york-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .location-header h2 {
+    font-size: 3.5rem;
+  }
+  .location-header .cloud {
+    height: 35rem;
+  }
+  .location-header .moving-cloud1 {
+    z-index: -1;
+  }
+  .location-header .moving-cloud2 {
+    z-index: -2;
+  }
+  #contact h2 {
+    font-size: 2rem;
+  }
+  #contact .form-wrapper {
+    width: auto;
+  }
+  .footer h3 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

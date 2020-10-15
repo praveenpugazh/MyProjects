@@ -1,0 +1,407 @@
+// Global styles
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font: 2.2rem;
+}
+
+h4 h5 {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// header and nav section
+
+.main-head {
+    background: #131c27;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.nav-links {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 10vh;
+    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h1 {
+        font-size: 3rem;
+        flex: 2 1 40rem;
+        color: white;
+        font-family: 'Pattaya', sans-serif;
+        font-weight: 400;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1 1 40rem;
+        font-size: 1.6rem;
+    }
+}
+
+
+// Hero section
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, .5), transparent), url(./images/landing-page.jpg);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    h2 {
+        font-size: 4.8rem;
+
+
+    }
+
+    h3 {
+        font-size: 3rem;
+        padding: 2rem;
+        line-height: 1.4;
+        font-weight: normal;
+    }
+
+    button {
+        border: none;
+        background: #4c6e97;
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        color: white;
+        transition: background .5s ease-in-out;
+    }
+
+    button:hover {
+        background: #27394e;
+    }
+}
+
+//Location section
+#location {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), transparent), url(./images/new-york-page.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-header {
+    width: 90%;
+    margin: auto;
+
+
+    h2 {
+        padding: 1rem 0rem;
+        font-size: 5rem;
+        text-decoration: underline;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, .5);
+        padding: 4rem 0rem;
+    }
+
+    .cloud {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: 50rem;
+    }
+
+    .moving-cloud1 {
+        animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+    }
+
+    .moving-cloud2 {
+        top: 20%;
+        z-index: -1;
+        opacity: .5;
+        animation: cloudAnimation 3s infinite alternate ease-in-out;
+    }
+
+}
+
+//cloud Animation 
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+
+
+//benefits section
+
+.benefits {
+    min-height: 100vh;
+
+}
+
+.benefits-head {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+
+    h2 {
+        font-size: 3.5rem;
+        padding: 1rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+}
+
+
+.cards {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 30rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3), 0 20px 20px rgba(0, 0, 0, .1);
+
+    .card-icon {
+        background-color: #343c44;
+    }
+
+    img {
+        max-width: 15%;
+        margin: 2rem;
+
+    }
+
+    h4 {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+//contact section
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), transparent), url(./images/contact-mountain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    button {
+        border: none;
+        background: #4c6e97;
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        color: white;
+        transition: background .5s ease-in-out;
+
+    }
+
+    button:hover {
+        background: #27394e;
+    }
+
+    .form-wrapper {
+        background: rgba(19, 28, 39, .8);
+        width: 30%;
+        border-radius: 20px;
+
+        label {
+            margin-right: 1rem;
+        }
+
+        input {
+            width: 50%;
+        }
+
+        button {
+            width: 100%;
+            padding: 2rem;
+            margin-top: 8rem;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+    }
+
+    .form-head {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .name-form,
+    .email-form {
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+
+        input {
+            padding: 1rem 2rem;
+        }
+
+    }
+}
+
+//footer
+footer {
+    background-color: #343c44;
+}
+
+.footer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h3 {
+        flex: 3 1 40rem;
+        font-size: 3rem;
+        color: white
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        flex: 1 1 40rem;
+        justify-content: space-between;
+    }
+
+}
+
+
+// Media Querry
+
+@media screen and (max-width: 912px) {
+    html {
+        font-size: 45%;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 1rem;
+    }
+
+    #location {
+        background: linear-gradient(rgba(0, 0, 0, .1), transparent), url(./images/new-york-page.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .location-header {
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        .cloud {
+            height: 35rem;
+        }
+
+        .moving-cloud1 {
+            z-index: -1;
+        }
+
+        .moving-cloud2 {
+            z-index: -2;
+        }
+    }
+
+    #contact {
+        h2 {
+            font-size: 2rem;
+        }
+
+        .form-wrapper {
+            width: auto;
+        }
+    }
+
+    .footer {
+        h3 {
+            text-align: center;
+        }
+    }
+}
